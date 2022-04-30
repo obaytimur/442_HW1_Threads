@@ -3,35 +3,26 @@
 //
 #include "atom.h"
 
-void setID(atom* Atom, int id){
+void setID(atom* Atom, int id){ // set atom ID
     Atom->atomID = id;
 }
 
-int getID(atom Atom){
+int getID(atom Atom){ // get atom ID
     return Atom.atomID;
 }
 
-void setValue(atom* Atom, int value){
+void setValue(atom* Atom, int value){ // set atom value
     Atom->typeValue = value;
 }
 
-int getValue(atom* Atom){
+int getValue(atom* Atom){ // get atom value
     return Atom->typeValue;
 }
 
-void setType(atom* Atom, char type){
+void setType(atom* Atom, char type){ // set atom type
     Atom->atomTYPE = type;
 }
 
-char getType(atom Atom){
+char getType(atom Atom){ // get atom type
     return Atom.atomTYPE;
-}
-
-void setGenerationTime(atom* Atom, double lambda){
-    double var;
-    var = rand() / (RAND_MAX + 1.0);
-    Atom->atomGenarationRate = -(log(1-var) / lambda);
-}
-double getGenerationTime(atom Atom){
-    return Atom.atomGenarationRate;
 }

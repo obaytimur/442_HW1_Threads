@@ -8,6 +8,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// The functions of the atom struct are described in the source codes
+
 typedef struct atom {
     int atomID;
     char atomTYPE; // C, H, O or N
@@ -21,6 +23,4 @@ void setValue(atom* Atom, int value);
 int getValue(atom* Atom);
 void setType(atom* Atom, char type);
 char getType(atom Atom);
-void setGenerationTime(atom* Atom, double lambda);
-double getGenerationTime(atom Atom);
 #endif //HW1_ATOM_H
